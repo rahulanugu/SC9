@@ -1,0 +1,91 @@
+/* Authors and their contributions: */
+/* Vidit: Designed the whole page */
+/* Kefan: Adjust to match the user story*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+:host {
+  display: block;
+  width: 100vw;
+}
+
+.blogInfo {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #2d5059;
+}
+
+.goBack {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d5059;
+  cursor: pointer;
+}
+
+.goBack :hover {
+  background-color: #ccc;
+}
+
+.keywords {
+  font-family: "Lato", serif;
+  color: #2d5059;
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
+}
+
+.post-body {
+  font-family: "Lato", serif;
+  color: #1d1f26;
+  font-style: normal;
+  font-size: 18px;
+  width: 80%;
+  min-height: 500px;
+  margin: auto;
+}
+
+.share-text {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  font-weight: bold;
+}
+
+div.share {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+}
+
+div.share div button {
+  border: 0px;
+}
+
+.related {
+  width: 95%;
+  margin: auto;
+}
+
+.divider {
+  border-top: 3px solid #d5dde1;
+}
+
+.postTitle {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #e6eff1;
+}
+
+.related-posts {
+  font-family: "Lato", serif;
+  color: #2d5059;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -1,0 +1,250 @@
+/* Stephanie - updated styling as per user story to ensure dynamic usage
+DenisH - Small update*/
+body {
+  width: 100%;
+  background-color: #faf6f2;
+}
+.heading {
+  font-family: "Tinos", serif;
+  color: #2e5159;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 35px;
+}
+
+
+/* body {
+  background-color: #faf6f2;
+} */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 400px;
+  height: 516px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  margin-top: 20px;
+}
+.card-container {
+  height: 100%;
+  width: 100%;
+ }
+.center {
+  text-align: center;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.helpBtn {
+  color: #009688;
+  border: 2px solid #009688;
+  background-color: white;
+
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border: 2px solid #009688;
+  border-radius: 7px;
+}
+
+label {
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h5 {
+  color: #1d1f26;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+hr {
+  left: 0%;
+  right: 0%;
+  margin-top: 10px;
+  border: 2px solid #e1e4eb;
+}
+
+.form-element {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin-left: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.form-element input {
+  width: 368px;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 25px;
+  background: #ffffff;
+  border: 2px solid #e1e4eb;
+  box-sizing: border-box;
+  box-shadow: inset 0px 2px 2px rgba(29, 31, 38, 0.15);
+  border-radius: 8px;
+}
+
+.form-element button {
+  width: 368px;
+  height: 40px;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.loginBtn {
+  color: white;
+  background-color: #5c8a96;
+  border: none;
+}
+
+.helpBtn,
+.signUpBtn {
+  color: #5c8a96;
+  border: 2px solid #5c8a96;
+  background-color: white;
+}
+
+.footer1 {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  /* height: auto; */
+  overflow: auto;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 0px;
+ }
+
+ .center img {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+ }
+
+
+
+@media screen and (max-width: 550px) {
+  .card,
+  .center,
+  .label,
+  .h5,
+  .form-element,
+  .hr {
+    width: 100% !important;
+  }
+  .form-element input,
+  .form-element button {
+    width: 95%
+  }
+
+  .form-element,
+  .h5 {
+    margin-left: 10px;
+  }
+  .heading {
+    padding-top:10px;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 370px) {
+  .center img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  .heading {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  label, .center {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .card {
+    margin-top: 10px;
+  }
+  hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .form-element {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .center img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  label, .center {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .card {
+    margin-top: 10px;
+  }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .form-element {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 950px){
+  .center img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+  label, .center {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .card {
+    margin-top: 5px;
+  }
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-element {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+  }
+  .card {
+    height: 427px;
+  }
+}

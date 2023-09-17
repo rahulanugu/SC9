@@ -1,0 +1,399 @@
+<!-- 
+  Refactored by: Siheng Wei
+  Reason: Refactor the code to make it more readable and easier to maintain
+  Steps:
+    1. Removed the unnecessary html&head&body tags
+    2. Added more comments to make the code more readable
+    3. The original code is commented out below
+ -->
+
+<div>
+  <!-- Header -->
+  <app-landing-page-header></app-landing-page-header>
+</div>
+
+<div>
+  <!-- H1 plus description -->
+  <h3 class="loginHeading">Who We Are</h3>
+  <p class="whoWeAreDesc">
+    Our team is transforming the way preventive care is handled for Heart
+    Disease and Readmission by combining the healthcare, technology, and
+    business expertise we need to drive our innovative solution to the market.
+  </p>
+</div>
+
+<!-- Top card/Founder -->
+<!-- XL View -->
+<div fxHide fxShow.xl>
+  <!-- Team cards -->
+  <div class="team">
+    <mat-grid-list cols="5" rowHeight="300px" [gutterSize]="'20px'">
+      <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+        <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+          <img src="{{ team.image }}" />
+          <div class="bottomleft">
+            <h1>{{ team.fname }} {{ team.lname }}</h1>
+            <h2>{{ team.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <!-- Advisor cards -->
+  <h1 class="advisor-h1">Advisors</h1>
+  <div class="advisors">
+    <mat-grid-list
+      style="width: 45%; margin: 0 auto"
+      cols="2"
+      rowHeight="300px"
+      [gutterSize]="'20px'"
+    >
+      <mat-grid-tile class="hover" *ngFor="let advisor of advisors">
+        <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+          <img src="{{ advisor.image }}" />
+          <div class="bottomleft">
+            <h1>{{ advisor.fame }}</h1>
+            <h2>{{ advisor.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<!-- XL View Ends -->
+
+<!-- LG View -->
+<div fxHide fxShow.lg>
+  <!-- Team cards -->
+  <div class="team">
+    <mat-grid-list cols="4" rowHeight="300px" [gutterSize]="'20px'">
+      <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+        <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+          <img src="{{ team.image }}" />
+          <div class="bottomleft">
+            <h1>{{ team.fname }} {{ team.lname }}</h1>
+            <h2>{{ team.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <!-- Advisor cards -->
+  <h1 class="advisor-h1">Advisors</h1>
+  <div class="advisors">
+    <mat-grid-list
+      style="width: 45%; margin: 0 auto"
+      cols="2"
+      rowHeight="300px"
+      [gutterSize]="'20px'"
+    >
+      <mat-grid-tile class="hover" *ngFor="let advisor of advisors">
+        <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+          <img src="{{ advisor.image }}" />
+          <div class="bottomleft">
+            <h1>{{ advisor.fname }}</h1>
+            <h2>{{ advisor.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<!-- LG View Ends -->
+
+<!-- Md View -->
+<div fxHide fxShow.md>
+  <!-- Team cards -->
+  <div class="team">
+    <mat-grid-list cols="3" rowHeight="300px" [gutterSize]="'20px'">
+      <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+        <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+          <img src="{{ team.image }}" />
+          <div class="bottomleft">
+            <h1>{{ team.fname }} {{ team.lname }}</h1>
+            <h2>{{ team.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <!-- Advisor cards -->
+  <h1 class="advisor-h1">Advisors</h1>
+  <div class="advisors">
+    <mat-grid-list
+      style="width: 65%; margin: 0 auto"
+      cols="2"
+      rowHeight="300px"
+      [gutterSize]="'20px'"
+    >
+      <mat-grid-tile class="hover" *ngFor="let advisor of advisors">
+        <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+          <img src="{{ advisor.image }}" />
+          <div class="bottomleft">
+            <h1>{{ advisor.fname }}</h1>
+            <h2>{{ advisor.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<!-- Md View Ends -->
+
+<!-- Mobile view -->
+<div fxShow fxHide.gt-sm>
+  <!-- Team cards -->
+  <div class="team">
+    <mat-grid-list cols="2" rowHeight="230px" [gutterSize]="'20px'">
+      <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+        <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+          <img src="{{ team.image }}" />
+          <div class="bottomleft">
+            <h1>{{ team.fname }} {{ team.lname }}</h1>
+            <h2>{{ team.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <!-- Advisor cards -->
+  <h1 class="advisor-h1">Advisors</h1>
+  <div class="advisors">
+    <mat-grid-list cols="2" rowHeight="230px" [gutterSize]="'20px'">
+      <mat-grid-tile class="hover" *ngFor="let advisor of advisors">
+        <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+          <img src="{{ advisor.image }}" />
+          <div class="bottomleft">
+            <h1>{{ advisor.fname }}</h1>
+            <h2>{{ advisor.occupation }}</h2>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<!-- Mobile view Ends -->
+
+<div class="join-team">
+  <h1>Interested in joining our team?</h1>
+  <button routerLink="/careers">View Open Roles</button>
+</div>
+
+<footer>
+  <app-landing-page-subfooter></app-landing-page-subfooter>
+</footer>
+
+<!-- Codes below are commented by Siheng Wei cause they are refactored as above -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!~~ Hotjar Tracking Code for https://www.scriptchain.co/home ~~>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2374837, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div>
+      <!~~ Header ~~>
+      <app-landing-page-header></app-landing-page-header>
+    </div>
+    <div>
+      <!~~ H1 plus description ~~>
+      <h3 class="loginHeading">Who We Are</h3>
+      <p class="whoWeAreDesc">
+
+        Our team is transforming the way preventive care is handled for Heart Disease and Readmission by combining the healthcare, technology, and business expertise we need to drive our innovative solution to the market.
+
+      </p>
+    </div>
+<!~~ Top card/Founder ~~>
+    <!~~ XL View ~~>
+    <div fxHide fxShow.xl>
+      <!~~ Team cards ~~>
+      <div class="team">
+        <mat-grid-list cols="5" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+            <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+              <img src="{{ team.image }}" />
+              <div class="bottomleft">
+                <h1>{{ team.fname }} {{ team.lname }} </h1>
+                <h2>{{ team.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <!~~ Advisor cards ~~>
+      <h1 class="advisor-h1">Advisors</h1>
+      <div class="advisors">
+        <mat-grid-list style="width: 45%; margin: 0 auto;" cols="2" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile
+            class="hover"
+            *ngFor="let advisor of advisors"
+          >
+          <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+              <img src="{{ advisor.image }}" />
+              <div class="bottomleft">
+                <h1>{{ advisor.fame }}</h1>
+                <h2>{{ advisor.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    <!~~ LG View ~~>
+    <div fxHide fxShow.lg>
+      <!~~ Team cards ~~>
+      <div class="team">
+        <mat-grid-list cols="4" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+            <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+              <img src="{{ team.image }}" />
+              <div class="bottomleft">
+                <h1>{{ team.fname }} {{ team.lname }}</h1>
+                <h2>{{ team.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <!~~ Advisor cards ~~>
+      <h1 class="advisor-h1">Advisors</h1>
+      <div class="advisors">
+        <mat-grid-list style="width: 45%; margin: 0 auto;" cols="2" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile
+            class="hover"
+            *ngFor="let advisor of advisors"
+          >
+          <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+              <img src="{{ advisor.image }}" />
+              <div class="bottomleft">
+                <h1>{{ advisor.fname }}</h1>
+                <h2>{{ advisor.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+
+    <!~~ Md View ~~>
+    <div fxHide fxShow.md>
+      <!~~ Team cards ~~>
+      <div class="team">
+        <mat-grid-list cols="3" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+            <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+              <img src="{{ team.image }}" />
+              <div class="bottomleft">
+                <h1>{{ team.fname }} {{ team.lname }}</h1>
+                <h2>{{ team.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <!~~ Advisor cards ~~>
+      <h1 class="advisor-h1">Advisors</h1>
+      <div class="advisors">
+        <mat-grid-list style="width: 65%; margin: 0 auto;" cols="2" rowHeight="300px" [gutterSize]="'20px'">
+          <mat-grid-tile
+            class="hover"
+            *ngFor="let advisor of advisors"
+          >
+          <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+              <img src="{{ advisor.image }}" />
+              <div class="bottomleft">
+                <h1>{{ advisor.fname }}</h1>
+                <h2>{{ advisor.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+    <!~~ Full View Ends ~~>
+    <!~~ Mobile view ~~>
+    <div fxShow fxHide.gt-sm>
+      <!~~ Team cards ~~>
+      <div class="team">
+        <mat-grid-list cols="2" rowHeight="230px" [gutterSize]="'20px'">
+          <mat-grid-tile class="hover" *ngFor="let team of teamMembers">
+            <div routerLink="/whoweare/employee/{{ team.Id }}" class="card">
+              <img src="{{ team.image }}" />
+              <div class="bottomleft">
+                <h1>{{ team.fname }} {{ team.lname }}</h1>
+                <h2>{{ team.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+
+      <!~~ Advisor cards ~~>
+      <h1 class="advisor-h1">Advisors</h1>
+      <div class="advisors">
+        <mat-grid-list cols="2" rowHeight="230px" [gutterSize]="'20px'">
+          <mat-grid-tile
+            class="hover"
+            *ngFor="let advisor of advisors"
+          >
+          <div routerLink="/whoweare/advisor/{{ advisor.Id }}" class="card">
+              <img src="{{ advisor.image }}" />
+              <div class="bottomleft">
+                <h1>{{ advisor.fname }}</h1>
+                <h2>{{ advisor.occupation }}</h2>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+
+
+      </div>
+    </div>
+    
+    <!~~ New updated code added ~~> 
+
+
+    <div class="join-team">
+      <h1>Interested in joining our team?</h1>
+      <button routerLink="/careers">View Open Roles</button>
+    </div>
+    <footer>
+      <app-landing-page-subfooter></app-landing-page-subfooter>
+    </footer>
+  </body>
+</html> -->

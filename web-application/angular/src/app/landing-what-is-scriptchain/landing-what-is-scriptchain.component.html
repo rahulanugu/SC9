@@ -1,0 +1,86 @@
+<!-- Authors and their contributions:
+    Vidit: Fixed the alignment issue and added the icons.
+ -->
+
+<app-landing-page-header></app-landing-page-header>
+
+<body>
+  <div fxShow fxHide.gt-sm>
+    <!-- Mobile View -->
+    <div class="mobile">
+      <!-- Header -->
+      <mat-grid-list cols="2" rowHeight="200px" [gutterSize]="'10px'">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <h3 class="loginHeading">What is ScriptChain Health?</h3>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <!-- All cards
+          *ngFor creates a card for each element on array (check .ts)
+          ngClass gives isCollapsed classed if clicked (if it doesnt have or removes it if it has)
+        -->
+      <div
+        *ngFor="let datas of dataInfo"
+        [ngClass]="{
+          isCollapsed: !datas.isCollapsed,
+          collapsed: datas.isCollapsed
+        }"
+        class="small-card"
+        (click)="datas.isCollapsed = !datas.isCollapsed"
+      >
+        <!-- Displays all the data from the array -->
+        <span
+          ><img src="{{ datas.icon }}" alt="" class="img-card" />{{
+            datas.title
+          }}</span
+        >
+        <!-- Check if collapsed then displays the proper arrow -->
+        <a *ngIf="datas.isCollapsed"
+          ><img src="../../assets/icons/arrow-down-short.svg" alt=""
+        /></a>
+        <a *ngIf="!datas.isCollapsed"
+          ><img src="../../assets/icons/arrow-up-short.svg" alt=""
+        /></a>
+        <!-- If not collapsed doesnt display -->
+        <div *ngIf="!datas.isCollapsed">{{ datas.info }}</div>
+      </div>
+      <!-- Sign Up -->
+      <div class="mt-5" fxLayout="column" fxLayoutAlign="center center">
+        <h3>Ready to sign up?</h3>
+        <a routerLink="/healthcare/register">
+          <button type="submit" class="signUpBtn">Sign Up</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div fxHide fxShow.gt-sm>
+    <!-- Full View -->
+    <div class="container">
+      <!-- Displays header -->
+      <mat-grid-list cols="2" rowHeight="200px" [gutterSize]="'30px'">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <h3 class="loginHeading">What is ScriptChain Health?</h3>
+        </mat-grid-tile>
+        <!-- Creates a card for each element of the array in .ts -->
+        <mat-grid-tile *ngFor="let data of dataInfo" [rowspan]="2">
+          <div class="card">
+            <img src="{{ data.icon }}" alt="" class="img-card" />
+            <h3>{{ data.title }}</h3>
+            <p>
+              {{ data.info }}
+            </p>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <!-- Sign Up -->
+    <div class="mt-5" fxLayout="column" fxLayoutAlign="center center">
+      <h3>Ready to sign up?</h3>
+      <a routerLink="/healthcare/register">
+        <button type="submit" class="signUpBtn">Sign Up</button>
+      </a>
+    </div>
+  </div>
+  <div>
+    <app-landing-page-subfooter></app-landing-page-subfooter>
+  </div>
+</body>

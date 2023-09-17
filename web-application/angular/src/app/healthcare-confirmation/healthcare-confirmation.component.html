@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+    </style>
+    <!-- Hotjar Tracking Code for https://www.scriptchain.co/home -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2374837, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+
+  <body>
+    <!-- healthcare account confirmation -->
+    <div fxlayout="column">
+      <app-healthcare-header></app-healthcare-header>
+      <div>
+        <h3 class="heading">Your account was created!</h3>
+      </div>
+      <div class="card">
+        <div class="card-container">
+          <div class="center">
+            <img src="./assets/mailIcon.png" />
+            <br />
+            <label style="margin-top: 16 px"
+              >We just need to verify your email address.</label
+            >
+          </div>
+
+          <h5 style="margin-top: 16 px">
+            The next step is to check your email for the message we've sent with
+            furter instructions.
+          </h5>
+          <hr />
+          <div class="center">
+            <button
+              type="button"
+              class="helpBtn"
+              style="width: 416px; height: 40px"
+            >
+              Help
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer1">
+        <app-healthcare-footer></app-healthcare-footer>
+      </div>
+    </div>
+  </body>
+</html>

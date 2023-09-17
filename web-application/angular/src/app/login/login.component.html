@@ -1,0 +1,43 @@
+<!--
+central login
+Charan Jagwani: Added security email features within each
+changed html to macth user story
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<body>
+
+
+
+<!-- central login -->
+<section class="login py-5">
+  <div class="container py-xl-5 py-lg-3">
+    <div class="title-section mb-md-5 mb-4">
+      <h3 class="w3ls-title text-uppercase text-dark font-weight-bold" style="padding-top: 50px">Login</h3>
+    </div>
+    <div class="login px-sm-4 mx-auto mw-100 login-wrapper">
+      <form class="login-wrapper" action="#" method="post">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" name="patientId" placeholder="" required="">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" name="password" placeholder="" required="">
+        </div>
+        <button type="submit" class="btn submit mt-4">Login</button>
+        <p class="text-center mt-5">
+          <a routerLink="/register"> Don't have an Account?</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- //central login -->
+
+<app-footer></app-footer>
+</body>
+
+</html>

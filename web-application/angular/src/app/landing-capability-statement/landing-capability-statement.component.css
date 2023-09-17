@@ -1,0 +1,388 @@
+/*Charan Jagwani: Worked on responsiveness and styling*/
+.html {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #faf6f2;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+
+.body {
+  overflow: hidden;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 1;
+}
+
+.top-right-square {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  border-radius: 5rem;
+  background-color: rgba(58, 84, 92, 0.4);
+  transform: rotate(55deg);
+  z-index: 0;
+  left: 25%;
+  bottom: 60%;
+}
+
+.middle-square {
+  position: absolute;
+  width: 90%;
+  height: 40%;
+  border-radius: 5rem;
+  background-color: rgba(58, 84, 92, 0.4);
+  transform: rotate(-35deg);
+  z-index: 0;
+  left: 3%;
+  top: 40%;
+  overflow: hidden;
+}
+/* Charan Jagwani: makes card*/
+.card {
+  padding: 1em .5em 2em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  transition: transform 500ms ease;
+  margin: auto;
+  float: none;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 630px;
+}
+/*Charan Jagwani: hover feature for it*/
+.card:hover {
+  transform: translateY(-25px);
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-body h3 {
+  text-align: center;
+}
+
+.csHeader {
+  font-family: "Tinos", serif;
+  color: #2d5059;
+  text-align: center;
+  font-size: 36px;
+}
+
+.csLogo {
+  width: 448px;
+  height: 252px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: block;
+  border-radius: 8px;
+}
+
+.csImg {
+  width: 50px;
+  height: 50px;
+}
+
+.information {
+  z-index: 1;
+  position: relative;
+  background-color: rgba(58, 84, 92, 0.4);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.information div{
+  flex: 1 50%;
+  margin: 0 auto;
+}
+.content2 h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 29px;
+}
+
+.content3 h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 29px;
+}
+
+.content2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-right: 800px;
+}
+
+.content2 ul {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  margin: auto;
+  color: #ffffff;
+}
+
+.dataInteg {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+.content3 span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.content3 span ul {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.contentwhite {
+  background-color: #e0dcdc;
+  width: 100%;
+}
+
+.contentwhite h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 29px;
+  margin-left: 38%;
+  padding-top: 15px;
+  /* White */
+  color: #1d1f26;
+}
+
+.contentwhite p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  width: 100%;
+  margin-left: 38%;
+  color: #1d1f26;
+}
+
+.contentwhite2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 165px;
+  padding-top: 10px;
+  padding-bottom: -100px;
+
+  color: #1d1f26;
+
+  margin-left: 15%;
+}
+
+.dataContent1+div>p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+/*Charan Jagwani: Phone view*/
+@media only screen and (max-device-width: 599px) {
+  body {
+    background-size: cover;
+  }
+  .information{
+    flex-direction: column;
+  }
+  .logo-container{
+    width: 100vw;
+  }
+  .logo-container img{
+    width: 90%;
+  }
+  .mobile{
+    width: 100vw;
+    margin-top: 40px;
+  }
+  .mobile .col{
+    min-width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    height: max-content;
+    width: 90%;
+    margin-left: 8vw;
+    font-size: 1rem;
+  }
+
+  .dataInteg {
+    width: 100vw;
+    padding-top: 30px;
+    font-size: 1.5rem;
+  }
+
+  .information{
+    width: 100vw;
+    text-align: center;
+  }
+  .information .content2{
+    padding-top: 20px;
+  }
+  .content2 h3 {
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+  }
+  .information .content3{
+    width: 95%;
+  }
+
+  .csimg1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .content3 h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .contentwhite {
+    width: 100vw;
+    background-color: #faf6f2;
+    margin: 15px 0;
+  }
+  .contentwhite2 p{
+    margin: 0;
+    padding: 0 10px;
+  }
+  .contentwhite h3{
+    text-align: center;
+  }
+  .dataContent1{
+    margin-bottom: 20px;
+  }
+  .generalContent h3,
+  .contactContent h3 {
+    margin: 0;
+  }
+
+  .generalContent p,
+  .contactContent p {
+    margin: 0;
+    padding-left: 100px;
+  }
+
+}
+
+/*Charan Jagwani: Tablet View*/
+@media only screen and (min-device-width: 600px) and (max-device-width: 1200px) {
+  html {
+    display: flex;
+  }
+  .information{
+    flex-direction: column;
+  }
+  .csHeader {
+    margin-bottom: 30px;
+  }
+
+  body {
+    background-size: cover;
+  }
+
+  .top-right-square {
+    width: 100%;
+    height: 90%;
+    transform: rotate(-35deg);
+    left: 5%;
+    bottom: 0%;
+  }
+
+  .middle-square {
+    width: 100%;
+    height: 90%;
+    transform: rotate(55deg);
+    left: 3%;
+    top: 162%;
+  }
+
+  .card {
+    width: 570px;
+  }
+
+  .dataInteg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+
+  .contentwhite2 {
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+
+  .contentwhite2 p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .contentwhite {
+    margin-top: 20px;
+    background-color: #faf6f2;
+    padding-top: 80px;
+    padding-left: 110px;
+    padding-bottom: 30px;
+  }
+
+  .contentwhite p,
+  .contentwhite h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contentwhite ul {
+    padding-right: 30%;
+  }
+
+  .content3 .wrapper2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content3 h3 {
+    text-align: center;
+  }
+}

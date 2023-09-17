@@ -1,0 +1,324 @@
+/* Sammy - fixed white paper button styling for mobile view*/
+
+
+/* Denis - Content for data */
+.contentData{
+  width: 100%;
+}
+.mat-grid-list-data{
+  background-image: url(../../assets/images/lightbackgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mat-grid-list-data mat-grid-tile{
+  text-align: center;
+  color: white;
+}
+.numeric{
+  font-family: "Rubik One";
+  font-size: 43px;
+}
+
+.data{
+  font-family: "Lato Bold";
+  font-weight: Bold;
+  font-size: 18px;
+}
+.study{
+  font-family: "Lato Italic";
+  font-size: 18px;
+}
+
+.numericsmall{
+  font-family: "Rubik One";
+  font-size: 18px;
+}
+
+.datasmall{
+  font-family: "Lato Bold";
+  font-weight: Bold;
+  font-size: 10px;
+}
+.studysmall{
+  font-family: "Lato Italic";
+  font-size: 10px;
+}
+/* Denis- Content for data ends */
+/* Denis- Content for about us */
+.about-us{
+  width: 100%;
+  display: grid;
+  background-color: white;
+  text-align: center;
+  height: 220px;
+  color: #2D5059;
+}
+.about-us h1{
+  margin: 0 auto;
+  margin-top: 20px;
+  height: max-content;
+  font-family: "Rubik One";
+  font-weight: bold;
+  font-size: 43px;
+}
+.about-us h3{
+  align-items: center;
+  height: max-content;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.about-us h2{
+  margin-top: 20px;
+  font-family: "Rubik One";
+  font-weight: bold;
+}
+.about-us h5{
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Denis- Content for about us */
+/* Denis- Contact us */
+.holder{
+  width: 100%;
+  height: max-content;
+  background: white;
+  align-items: center;
+  display: flex;
+}
+.flex100{
+  min-width: 100%;
+}
+.flex50{
+  min-width: 50%;
+}
+
+.left-contact-us{
+  width: 100%;
+  margin: auto;
+  margin-left: 10%;
+}
+
+.contact-us{
+  font-family: "Rubik One";
+  font-weight: 43px;
+  color: #2D5059;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.left-contact-us p{
+  font-family: "Lato";
+  font-weight: 14px;
+  color: #2D5059;
+
+}
+
+.left-contact-us button{
+  font-style: "Lato";
+  font-weight: bold;
+  text-decoration: none;
+  border: white;
+  background-color: white;
+  color: #2D5059;
+  padding-left: 0;
+}
+.partner{
+  margin-top: 25px;
+  font-size: 18px;
+  text-align: right !important;
+  background: #2D5059 !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border-radius: 10px;
+}
+.sign{
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.right-contact-us{
+  width: 80%;
+  background-color: #2D5059;
+  align-items: center;
+  margin: 50px auto 20px auto;
+  padding: 20px 0;
+  min-height: 450px;
+  max-height: max-content;
+}
+.form{
+  width: 80%;
+  margin: 10px auto;
+
+}
+.form input{
+  width: 100%;
+  height: 45px;
+  text-align: top;
+}
+.message{
+  width: 100%;
+  text-decoration: none;
+  resize: none;
+  height: 130px;
+}
+
+.right-contact-us button{
+  text-decoration: none;
+  width: 100%;
+  height: 45px;
+  background-color: #BCE5C5;
+}
+.top-contact-us{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.top-contact-us p{
+  font-family: "Lato";
+  font-weight: 14px;
+  color: #2D5059;
+
+}
+
+.top-contact-us button{
+  font-style: "Lato";
+  font-weight: bold;
+  text-decoration: none;
+  border: white;
+  background-color: white;
+  color: #2D5059;
+  padding-left: 0;
+}
+.bottom-contact-us{
+  width: 100vw;
+  margin: 20px auto;
+}
+
+/* Denis- Contact us ends*/
+/* Denis- Read Case */
+.read-case-container{
+  width: 100%;
+  height: 350px;
+  background-image:url( "../../assets/readCase.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.read-case-container h1{
+  text-align: center;
+  font-family: "Rubik One";
+  font-size: 35px;
+  color: #FFFFFF;
+
+}
+.read-case-container button{
+  color: #2d5059;
+  background-color: white;
+  border-color: #2d5059;
+  border-radius: 10px;
+  font-style: "Lato";
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+/* Denis- Read Case ends*/
+/*  */
+content {
+  width: 1156px;
+  min-height: 1500px;
+
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .content p {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .content3 {
+    font-size: 10px;
+  }
+  .content3 blockquote {
+    font-size: 10px !important;
+    padding: 10px;
+    margin: 0px;
+  }
+  .content3 cite {
+    font-size: 8px !important;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .content3 {
+    font-size: 8px;
+  }
+  .content3 blockquote {
+    font-size: 1.2em !important;
+    padding: 10px;
+    margin: 0px;
+  }
+  .content3 cite {
+    font-size: 0.9em !important;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.content2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  align-items: center;
+}
+.content2 h2 {
+  /* Grey 500 */
+
+  color: #1d1f26;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Lato", sans-serif;
+  margin-top: 40px;
+}
+
+.content2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  text-align: center;
+
+  /* Grey 500 */
+
+  color: #1d1f26;
+}
+
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

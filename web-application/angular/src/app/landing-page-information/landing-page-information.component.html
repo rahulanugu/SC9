@@ -1,0 +1,39 @@
+<div class="holder">
+  <div class="cards">
+    <h1 class="header">Why ScriptChain Health?</h1>
+    <div class="card" *ngFor="let cards of card">
+      <mat-card>
+        <img mat-card-image src="{{ cards.cardImage }}" />
+        <mat-card-content>
+          <h5>{{ cards.cardTitle }}</h5>
+          <p>
+            {{ cards.cardContects }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="video-container">
+    <h1 class="header">Watch How We Interpret Data</h1>
+    <div class="video">
+      <video
+        #video
+        id="vid"
+
+        controls
+        poster="../../assets/company-logo/scriptchain-health-logo-dark.svg"
+      >
+        <source
+          src="../../assets/videos/ScriptChain Health Product Demo.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="buttons">
+        <button class="buttonClass" (click)="whitePaper()">
+          ScriptChain Health White Paper
+        </button>
+        <button routerLink="/request-access">Request Demo</button>
+      </div>
+    </div>
+  </div>
+</div>

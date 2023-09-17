@@ -1,0 +1,74 @@
+<header>
+  <app-healthcare-header></app-healthcare-header>
+</header>
+<div style="background-color: #faf6f2">
+  <div class="inline-elements">
+    <img src="./assets/homeIcon.png" />
+    <label>Home</label>
+    <img src="./assets/arrowIcon.png" />
+    <img src="./assets/L1.png" />
+    <label>Lab Results</label>
+  </div>
+
+  <h3 class="loginHeading">Lab Results</h3>
+
+  <div class="images">
+    <label style="margin-left: 40px; font-size: 18px">
+      Date &nbsp;
+      <img src="./assets/downArrow.png" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Results</label
+    >
+  </div>
+  <div style="display: flex;flex-direction: column;">
+    <div class="docInfo">
+      <div id="uppertext">
+        <span class="medicationstext">mm/dd/yyyy</span>
+        <button
+          class="btn btn-dk btn-sm"
+          style="margin-left: 27.5%;height: 31px;margin-top: 4%;
+          border-radius: 8px;"
+        >
+          Normal
+        </button>
+      </div>
+      <div class="divs" style="margin-top: 5%;">
+        <button class="buttoncontent">Details</button>
+      </div>
+    </div>
+    <div class="docInfo">
+      <div id="uppertext">
+        <span class="medicationstext">mm/dd/yyyy</span>
+        <button
+          class="btn btn-red btn-sm"
+          style="margin-left: 23.5%;height: 31px;margin-top: 4%;
+          border-radius: 8px;"
+        >
+          Abnormal
+        </button>
+      </div>
+      <div class="divs" style="margin-top: 5%;">
+        <button class="buttoncontent blue">Details</button>
+      </div>
+    </div>
+    <div class="docInfo" style="margin-bottom: 4%;">
+      <div id="uppertext">
+        <span class="medicationstext">mm/dd/yyyy</span>
+        <button
+          class="btn btn-dk btn-sm"
+          style="margin-left: 27.5%;height: 31px;margin-top: 4%;
+          border-radius: 8px;"
+        >
+          Normal
+        </button>
+      </div>
+      <div class="divs" style="margin-top: 5%;">
+        <button class="buttoncontent">Details</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <app-healthcare-footer></app-healthcare-footer>
+  </footer>
+</div>

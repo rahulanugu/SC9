@@ -1,0 +1,63 @@
+/* Sammy - add styling for category text and readmore butto */
+/* Kefan - Update styling to match the user story */
+
+.content {
+  padding: 35px 25px;
+}
+
+.content mat-card {
+  height: 450px;
+  font-family: "Lato", sans-serif;
+}
+
+.blog-card {
+  border-radius: 12px;
+  height: 425px;
+}
+
+mat-card-subtitle.card-cat-left{
+  line-height: normal;
+  display: inline;
+  width: 100% !important;
+  color: #B27036;
+  text-transform: uppercase;
+  font-size:14px;
+  font-style: normal;
+}
+
+.card-title-left{
+  margin:1vh 0;
+  width: 100% !important;
+  font-size: 18px;
+  font-style: normal;
+  color: #1D1F26;
+}
+
+.card-read-right{
+  margin-left: 5px;
+  margin-bottom: 1.5rem;
+  line-height: normal;
+  display: inline;
+  font-size: 15px;
+  width: 100% !important;
+  color: #a5a7ad;
+}
+
+.card-title {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  align-items: flex-end;
+  margin-bottom: 0px;
+}
+
+mat-card-content p.card-excerpt{
+  font-size:14px;
+  font-style: normal;
+  color: #1D1F26;
+}
+
+.readMoreBtn{
+  font-weight: 100;
+  padding-left: 10px;
+  color: #5C8A96;
+}

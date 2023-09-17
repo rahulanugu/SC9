@@ -1,0 +1,141 @@
+/* Authors and their contributions */
+/* Vidit: Redesigned the form using CSS grid and made the page responsive. */
+/* Siheng: Removed the unnecessary imports and added more space between the submit button and the footer */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap'); */
+
+.bpHeader {
+  font-family: "Tinos", serif;
+  color: #2d5059;
+  font-size: 36px;
+  margin-top: 60px;
+}
+
+.bpSubHeader {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #1d1f26;
+}
+
+form label {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: left;
+  /* White */
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #1d1f26;
+}
+
+form input {
+  /* White */
+  background: #ffffff;
+  /* Grey 200 */
+  border: 2px solid #e1e4eb;
+  box-sizing: border-box;
+  /* Inner Shadow E-100 */
+
+  box-shadow: inset 0px 2px 2px rgba(29, 31, 38, 0.15);
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+}
+form select {
+  width: 100% !important;
+}
+form span {
+  display: block;
+}
+
+.error {
+  border: 2px red solid !important;
+}
+
+.sendBtn {
+  width: 140px;
+  height: 40px;
+  color: #e6eff1;
+  background-color: #5c8a96;
+  border: #5c8a96;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  justify-self: center;
+  grid-column: 1 / -1;
+  margin: 0 auto;
+}
+
+form select {
+  /* White */
+
+  background: #ffffff;
+  /* Grey 200 */
+
+  border: 2px solid #e1e4eb;
+  box-sizing: border-box;
+  /* Inner Shadow E-100 */
+
+  box-shadow: inset 0px 2px 2px rgba(29, 31, 38, 0.15);
+  border-radius: 8px;
+  height: 40px;
+  width: 272px;
+}
+
+.left {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+}
+
+.divider {
+  border-top: 1px solid #b0b4bf;
+  grid-column: 1 / -1;
+}
+
+form > div {
+  display: inline-block;
+}
+
+.bpForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  background-color: #e6eff1;
+  border-radius: 15px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#partnership-div {
+  background-color: #f5f1ed;
+  padding-bottom: 5%;
+}
+
+#partnership-form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#partnership-form form {
+  padding: 3em;
+}
+
+.partnership-flex-row {
+  justify-content: space-between;
+}
+
+.partnership-flex-row div {
+  min-width: 280px;
+}

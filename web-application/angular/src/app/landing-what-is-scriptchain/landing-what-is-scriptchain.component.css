@@ -1,0 +1,103 @@
+/* Authors and their contributions:
+    Vidit: Added the img class for styling the icons on the page
+            Also worked on the responsiveness by adding a few media queries.
+    Vince G: Changed html and body to fix half background color in styling.
+ */
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #D1E4BF, white);
+  height: max-content;
+}
+
+.loginHeading {
+  text-align: center;
+  font-family: "Tinos";
+  font-size: 36px;
+  color: #2D5059;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.card {
+  width: 30vw;
+  min-height: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+}
+
+.img-card {
+  align-items: center;
+  width: 91px;
+  height: 91px;
+  margin: 10px auto;
+  margin-top: 25px;
+}
+
+.card h3 {
+  text-align: center;
+  font-family: "Lato Bold";
+  font-weight: bold;
+  margin: 5px;
+}
+
+.card p {
+  text-align: center;
+  font-family: "Lato";
+  margin: 0 10px;
+}
+
+.signUpBtn {
+  width: 134px;
+  height: 40px;
+  color: white;
+  background-color: #5c8a96;
+  border: none;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-right: 17px;
+  border-radius: 7px;
+  margin-bottom: 49px;
+}
+
+.mobile div {
+  margin: 15px auto;
+}
+
+.small-card {
+  position: relative;
+  text-align: left;
+  min-width: 340px;
+  max-width: 75vw;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.small-card img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-right: 9px;
+}
+
+.small-card span {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Lato Bold";
+  font-weight: bold;
+  text-align: left;
+  width: 80%;
+}
+.small-card a{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 26px;
+}

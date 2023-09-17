@@ -1,0 +1,133 @@
+/* Stephanie - updated styling as per user story to ensure dynamic usage */
+
+.heading {
+  font-family: "Tinos", serif;
+  color: #2d5059;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 100px;
+}
+body {
+  background-color: #faf6f2;
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(29, 31, 38, 0.15);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 448px;
+  height: 282px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  font-family: "Lato", sans-serif;
+  margin-top: 30px;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+.helpBtn {
+  color: #5c8a96;
+  border: 2px solid #5c8a96;
+  background-color: white;
+  margin-top: 16px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border: 2px solid #5c8a96;
+  border-radius: 7px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d1f26;
+}
+
+h5 {
+  color: #1d1f26;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+hr {
+  left: 0%;
+  right: 0%;
+  margin-top: 16px;
+
+  /* Grey 200 */
+  border: 2px solid #e1e4eb;
+}
+html {
+  width: 100%;
+  height: 100%;
+  display: table;
+
+}
+
+body {
+  width: 100%;
+  display: table-cell;
+  background-color: #faf6f2;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+img {
+  margin-top: 13px;
+  width: 76px;
+  height: 56px;
+}
+
+.footer1 {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 550px) {
+  .card,
+  .center,
+  .helpBtn,
+  .label,
+  .h5,
+  .hr {
+    width: 100% !important;
+  }
+  .heading {
+    padding-top:10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .helpBtn {
+    margin-top: 5px;
+  }
+  .hr {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card {
+    height: 310px;
+  }
+}
+
+

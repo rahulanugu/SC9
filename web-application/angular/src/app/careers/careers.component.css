@@ -1,0 +1,70 @@
+.jobs {
+  background-color: white;
+
+  align-items: flex-start;
+}
+
+.angellist_data {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.angellist_data * * {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.angellist_test {
+  background-color: black !important;
+}
+
+.applyBtn {
+  width: 118px;
+  height: 40px;
+  color: #5c8a96;
+  border: 2px solid #5c8a96;
+  background-color: white;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  border: 2px solid #5c8a96;
+  border-radius: 8px;
+}
+
+.Heading {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 36px;
+  font-family: "Tinos", sans-serif;
+  font-weight: bold;
+  color: #2d5059;
+}
+
+.category {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #1D1F26;
+}
+
+.jobtitle {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #575B66;
+}
+
+.description {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  color: #1D1F26;
+}
+
+.location {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  color: #1D1F26;
+}
+
+.divider {
+  border-top: 2px solid #eef3f5;
+}
