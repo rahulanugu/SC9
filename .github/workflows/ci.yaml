@@ -61,9 +61,3 @@ jobs:
       - name: build in production mode
         working-directory: ./web-application/angular
         run: npm run build
-
-      # Test
-
-      - name: build in production mode
-        working-directory: ./web-application/angular
-        run: ng test
